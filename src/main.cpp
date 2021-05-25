@@ -18,14 +18,14 @@
 #include <vector>
 #include <map>
 
-#include "/usr/include/hidapi/hidapi.h"
-
 // Headers needed for sleeping.
 #ifdef _WIN32
 	#include <windows.h>
 #else
 	#include <unistd.h>
 #endif
+
+#include "hidapi/hidapi.h"
 
 #include "utils.h"
 #include "joycon.h"

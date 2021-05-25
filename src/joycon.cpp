@@ -6,11 +6,7 @@
 #include <map>
 #include <bitset>
 
-#ifdef __linux__
-  #include "/usr/include/hidapi/hidapi.h"
-#elif defined(_WIN32)
-  #include "hidapi.h"
-#endif
+#include "hidapi/hidapi.h"
 
 // Headers needed for sleeping.
 #ifdef _WIN32
@@ -158,7 +154,7 @@ JoyCon::JoyCon(uint jc_type, const char* serial_no) {
 
   printf("Done with init.\n");
 
-  hid_set_nonblocking(handle, 1);
+  hid_set_nonblocking(handle, 0);
 
   unsigned char response[report_len];
   for (size_t i = 0; i < 10; i++) {

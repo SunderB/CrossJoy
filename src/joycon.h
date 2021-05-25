@@ -5,7 +5,7 @@
 #include <string>
 #include <stdint.h>
 #include "utils.h"
-#include "/usr/include/hidapi/hidapi.h"
+#include "hidapi/hidapi.h"
 
 enum ReportType {
   subcommand_reply = 0x21,
