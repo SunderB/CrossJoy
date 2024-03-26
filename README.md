@@ -1,5 +1,5 @@
 # "CrossJoy" - JoyCon Input Test
-A proof-of-concept prototype of a cross-platform(?) C++ port of [BetterJoy](https://github.com/Davidobot/BetterJoy); to allow the JoyCon to be used with programs using the Cemuhook interface (e.g. Cemu, Dolphin).
+Currently a proof-of-concept prototype based on [BetterJoy](https://github.com/Davidobot/BetterJoy), with the eventual aim of allowing the JoyCon to be more easily used with programs on Linux.
 
 * [Building](#building)
 * [Running](#running)
@@ -16,18 +16,20 @@ cd build
 cmake ..
 cmake --build .
 ```
-This has only been tested on Linux.
+> [!NOTE]
+> Although this has been programmed with the aim of working cross-platform, this has only been tested on Linux.
 
 
 ## Running
-ℹ️ -  On Linux you may need to run the program as root (or change udev rules) to avoid "Permission Denied" errors.
+> [!NOTE]
+> On Linux you may need to run the program as root (or change udev rules) to avoid "Permission Denied" errors.
 ```bash
 # Run!
 ./joycon
 ```
 
 ## Licence
-CrossJoy is distributed under the MIT Licence. Copyright (c) 2021 SunderB. All rights reserved.
+CrossJoy is distributed under the MIT Licence. Copyright (c) SunderB. All rights reserved.
 
 ### 3rd-party licences
 * **[BetterJoy](https://github.com/Davidobot/BetterJoy)** - licensed under the MIT Licence. Copyright (c) 2018 David Khachaturov
