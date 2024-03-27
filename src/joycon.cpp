@@ -54,7 +54,8 @@ JoyCon::JoyCon(uint jc_type, const char* serial_no) {
       printf("(Try running this program using sudo)\n");
     }
 
-     //return 1;
+    // Abort the initialisation/testing process (otherwise we get a segfault)
+    return;
   }
   printf("Handle: %8hhx\n", handle);
 
